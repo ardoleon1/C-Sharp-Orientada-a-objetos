@@ -10,6 +10,6 @@ namespace Orientada_a_objetos
     {
         //Atributos da classe conta
         public string nome;
-
+        public string codigo;
     }
 }
