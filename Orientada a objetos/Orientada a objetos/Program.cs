@@ -62,12 +62,12 @@ namespace Orientada_a_objetos
             Console.WriteLine("\n---Imprimindo os dados da Conta---");
             Console.WriteLine("---Conta 1---");
             Console.WriteLine($"Número: {conta1.numero}");
-            Console.WriteLine($"Saldo: {conta1.saldo}");
-            Console.WriteLine($"Limite: {conta1.limite}");
+            Console.WriteLine($"Saldo: {conta1.saldo:c2}");
+            Console.WriteLine($"Limite: {conta1.limite:c2}");
             Console.WriteLine("---Conta 2---");
             Console.WriteLine($"Número: {conta2.numero}");
-            Console.WriteLine($"Saldo: {conta2.saldo}");
-            Console.WriteLine($"Limite: {conta2.limite}");
+            Console.WriteLine($"Saldo: {conta2.saldo:c2}");
+            Console.WriteLine($"Limite: {conta2.limite:c2}");
 
             Console.ReadKey();
         }
