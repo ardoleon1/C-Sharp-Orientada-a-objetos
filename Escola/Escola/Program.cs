@@ -38,7 +38,7 @@ namespace Escola
             pessoa2.cargo = "Desenvolvedora";
             pessoa2.salarioFuncionario = 4000;
 
-            Console.WriteLine("---Imprimindo os dados dos funcionários---");
+            Console.WriteLine("\n---Imprimindo os dados dos funcionários---");
             Console.WriteLine($"Nome: {pessoa1.nome}");
             Console.WriteLine($"Cargo: {pessoa1.cargo}");
             Console.WriteLine($"Salário: {pessoa1.salarioFuncionario}");
@@ -58,7 +58,7 @@ namespace Escola
             turma2.sigla = 'B';
             turma2.tipoEnsino = "EAD";
 
-            Console.WriteLine("---Imprimindo os dados das turmas---");
+            Console.WriteLine("\n---Imprimindo os dados das turmas---");
             Console.WriteLine($"Período: {turma1.periodo}");
             Console.WriteLine($"Série: {turma1.serie}");
             Console.WriteLine($"Sigla: {turma1.sigla}");
