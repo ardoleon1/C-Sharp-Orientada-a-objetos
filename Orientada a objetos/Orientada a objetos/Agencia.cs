@@ -6,14 +6,8 @@ using System.Threading.Tasks;
 
 namespace Orientada_a_objetos
 {
-    public class Conta
+    public class Agencia
     {
-        //Atributos da classe conta
-        public string nome;
-        public string codigo;
-
         public int numero;
-        public double saldo;
-        public double limite = 100;
     }
 }
