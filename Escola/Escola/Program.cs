@@ -67,6 +67,8 @@ namespace Escola
             Console.WriteLine($"Série: {turma2.serie}");
             Console.WriteLine($"Sigla: {turma2.sigla}");
             Console.WriteLine($"Tipo de ensino: {turma2.tipoEnsino}");
+
+            Console.ReadKey();
         }
     }
 }
