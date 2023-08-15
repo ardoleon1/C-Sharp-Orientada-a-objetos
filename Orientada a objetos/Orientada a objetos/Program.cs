@@ -69,6 +69,18 @@ namespace Orientada_a_objetos
             Console.WriteLine($"Saldo: {conta2.saldo:c2}");
             Console.WriteLine($"Limite: {conta2.limite:c2}");
 
+            Cliente c1 = new Cliente();
+            c1.codigo = 128;
+            c1.nome = "André Barbosa";
+            Cliente c2 = new Cliente();
+            c2.codigo = 548;
+            c2.nome = "Jaqueline Ferrete";
+
+            c1.cliente = c1;
+            c2.cliente = c2;
+
+            Console.WriteLine($"\nCliente: {c1.cliente.nome}");
+
             Console.ReadKey();
         }
     }

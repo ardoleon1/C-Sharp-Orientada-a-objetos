@@ -11,7 +11,6 @@ namespace Escola
         static void Main(string[] args)
         {
             Aluno aluno1 = new Aluno();
-            aluno1.nome = "Gabriel";
             aluno1.RG = "134813";
             aluno1.dataNascimento = "29/04/2000";
 
@@ -41,10 +40,10 @@ namespace Escola
             Console.WriteLine("\n---Imprimindo os dados dos funcionários---");
             Console.WriteLine($"Nome: {pessoa1.nome}");
             Console.WriteLine($"Cargo: {pessoa1.cargo}");
-            Console.WriteLine($"Salário: {pessoa1.salarioFuncionario}");
+            Console.WriteLine($"Salário: {pessoa1.salarioFuncionario:c2}");
             Console.WriteLine($"\nNome: {pessoa2.nome}");
             Console.WriteLine($"Cargo: {pessoa2.cargo}");
-            Console.WriteLine($"Salário: {pessoa2.salarioFuncionario}");
+            Console.WriteLine($"Salário: {pessoa2.salarioFuncionario:c2}");
 
             Turma turma1 = new Turma();
             turma1.periodo = "Matutino";
