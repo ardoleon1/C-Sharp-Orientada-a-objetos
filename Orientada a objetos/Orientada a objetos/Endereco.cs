@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Orientada_a_objetos
 {
-    public class Agencia
+    public class Endereco
     {
-        public int numero;
+        
     }
 }

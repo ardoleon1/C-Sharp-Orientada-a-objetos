@@ -10,7 +10,11 @@ namespace Escola
     {
         static void Main(string[] args)
         {
+            Turma turma1 = new Turma();
+            Turma turma2 = new Turma();
+
             Aluno aluno1 = new Aluno();
+            aluno1.nome = "Gabriel";
             aluno1.RG = "134813";
             aluno1.dataNascimento = "29/04/2000";
 
@@ -19,13 +23,27 @@ namespace Escola
             aluno2.RG = "143874";
             aluno2.dataNascimento = "18/01/2002";
 
+            turma1.periodo = "Matutino";
+            turma1.serie = "7º ano";
+            turma1.sigla = 'A';
+            turma1.tipoEnsino = "Presencial";
+            aluno1.turma = turma1;
+
+            turma2.periodo = "Vespertino";
+            turma2.serie = "8º ano";
+            turma2.sigla = 'B';
+            turma2.tipoEnsino = "EAD";
+            aluno2.turma = turma2;
+
             Console.WriteLine("---Imprimindo os dados dos alunos---");
             Console.WriteLine($"Nome: {aluno1.nome}");
             Console.WriteLine($"RG: {aluno1.RG}");
             Console.WriteLine($"Data de Nascimento: {aluno1.dataNascimento}");
+            Console.WriteLine($"Turma: {aluno1.turma.serie}");
             Console.WriteLine($"\nNome: {aluno2.nome}");
             Console.WriteLine($"RG: {aluno2.RG}");
             Console.WriteLine($"Data de Nascimento: {aluno2.dataNascimento}");
+            Console.WriteLine($"Turma: {aluno2.turma.serie}");
 
             Funcionario pessoa1 = new Funcionario();
             pessoa1.nome = "Daniel";
@@ -44,18 +62,6 @@ namespace Escola
             Console.WriteLine($"\nNome: {pessoa2.nome}");
             Console.WriteLine($"Cargo: {pessoa2.cargo}");
             Console.WriteLine($"Salário: {pessoa2.salarioFuncionario:c2}");
-
-            Turma turma1 = new Turma();
-            turma1.periodo = "Matutino";
-            turma1.serie = "7º ano";
-            turma1.sigla = 'A';
-            turma1.tipoEnsino = "Presencial";
-
-            Turma turma2 = new Turma();
-            turma2.periodo = "Vespertino";
-            turma2.serie = "8º ano";
-            turma2.sigla = 'B';
-            turma2.tipoEnsino = "EAD";
 
             Console.WriteLine("\n---Imprimindo os dados das turmas---");
             Console.WriteLine($"Período: {turma1.periodo}");

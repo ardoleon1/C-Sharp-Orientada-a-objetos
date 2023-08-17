@@ -11,5 +11,6 @@ namespace Escola
         public string nome;
         public string RG;
         public string dataNascimento;
+        public Turma turma;
     }
 }

@@ -11,5 +11,6 @@ namespace Orientada_a_objetos
         public int codigo;
         public string nome;
         public Cliente cliente;
+        public Endereco endereco;
     }
 }
