@@ -8,38 +8,26 @@ namespace Orientada_a_objetos
 {
     public class Conta
     {
-        //Atributos da classe conta
-        public string nome;
-        public string codigo;
-
         public int numero;
-        public double saldo;
-        public double limite = 100;
-
+        public decimal saldo;
+        public decimal limite = 100;
         public Agencia agencia;
 
-        public void Depositar(double valor)
+        public void Depositar(decimal valor)
         {
             saldo = saldo + valor;
         }
-        public void Sacar(double valor)
+        public void Sacar(decimal valor)
         {
             saldo = saldo - valor;
         }
-        public double ConsultarSaldo()
+        public decimal ConsultarSaldo()
         {
             return saldo + limite;
         }
-        public void ImprimirExtrato()
+        public void ImprimeExtrato()
         {
-            DateTime dt = DateTime.Now;
-            string data = dt.ToShortDateString();
-            string hora = dt.ToShortTimeString();
-            Console.WriteLine("\t\t---Extrato Detalhado---");
-            Console.Write("\nData: " + data);
-            Console.Write("\t\tHora: " + hora);
-            Console.WriteLine($"\nSaldo: {saldo:c2}");
-            Console.WriteLine($"\nLimite: {limite:c2}");
+            Console.WriteLine("Saldo: " + saldo.ToString("c2"));
         }
     }
 }

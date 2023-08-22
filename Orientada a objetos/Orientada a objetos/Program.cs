@@ -6,109 +6,123 @@ using System.Threading.Tasks;
 
 namespace Orientada_a_objetos
 {
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {
-            Endereco ed1 = new Endereco();
-            Endereco ed2 = new Endereco();
+            //Cliente cliente = new Cliente();
 
-            //Instanciando um novo objeto
-            Agencia agencia1 = new Agencia();
-            agencia1.numero = 0001;
+            //CartaoDeCredito cartao = new CartaoDeCredito();
+            //cartao.numero = 123;
+            //cartao.dataDeValidade = "21/11/2021";
+            //cartao.cliente = cliente;
+            //cartao.cliente.nome = "Ana Paula";
 
-            Agencia agencia2 = new Agencia();
-            agencia2.numero = 0002;
+            //Console.WriteLine(cliente.nome);
+            //Console.WriteLine(cartao.cliente.nome);
 
-            //Instanciando um novo objeto
-            Conta natam = new Conta();
-            //Passando valores para os atributos
-            natam.codigo = "258945-8";
-            natam.nome = "Natam da Silva Gomes";
 
-            Conta fernanda = new Conta();
-            fernanda.codigo = "35457-5";
-            fernanda.nome = "Fernanda Lima";
+            // Criando um objeto de cada classe
+            Cliente c = new Cliente();
+            CartaoDeCredito cdc = new CartaoDeCredito();
+            Conta ct = new Conta();
+            Agencia ag = new Agencia();
+            Endereco end = new Endereco();
 
-            Conta aline = new Conta();
-            aline.codigo = "14738-9";
-            aline.nome = "Aline Pereira";
+            // Acessando os atributos
+            c.nome = "Rafael Duarte";
+            c.codigo = 123;
+            cdc.numero = 111111;
+            cdc.dataDeValidade = "12/12/18";
+            ct.numero = 45678;
+            ct.saldo = 500;
+            ct.limite = 100;
+            ag.numero = 1825;
+            end.logradouro = "Avenida Paraná";
+            end.numero = 2345;
+            end.bairro = "Centro";
 
-            Console.WriteLine("---Imprimindo os dados das Pessoas---");
-            Console.WriteLine("\nCódigo: " + natam.codigo);
-            Console.WriteLine("Nome: " + natam.nome);
-            Console.WriteLine("\nCódigo: " + fernanda.codigo);
-            Console.WriteLine("Nome: " + fernanda.nome);
-            Console.WriteLine("\nCódigo: " + aline.codigo);
-            Console.WriteLine("Nome: " + aline.nome);
+            Console.WriteLine("Dados do cliente");
+            Console.WriteLine("Nome: " + c.nome);
+            Console.WriteLine("Código: " + c.codigo);
 
-            CartaoDeCredito cc1 = new CartaoDeCredito();
-            cc1.numero = "5504 4700 8345 4830";
-            cc1.dataValidade = "09/2024";
+            Console.WriteLine("----------------------------------------");
 
-            Console.WriteLine("\n---Imprimindo os dados do Cartão de Crédito---");
-            Console.WriteLine($"Número: {cc1.numero}");
-            Console.WriteLine($"Data de Validade {cc1.dataValidade}");
+            Console.WriteLine("Dados do cartão");
+            Console.WriteLine("Número: " + cdc.numero);
+            Console.WriteLine("Data de validade: " + cdc.dataDeValidade);
 
-            Console.WriteLine("\n---Imprimindo os dados da Agência---");
-            Console.WriteLine($"Número: {agencia1.numero}");
+            Console.WriteLine("----------------------------------------");
 
-            Conta conta1 = new Conta();
-            conta1.numero = 1;
-            conta1.saldo = 500;
-            conta1.limite = 250;
-            conta1.agencia = agencia1;
+            Console.WriteLine("Dados da conta");
+            Console.WriteLine("Número: " + ct.numero);
+            Console.WriteLine("Saldo: " + ct.saldo);
+            Console.WriteLine("Limite: " + ct.limite);
 
-            Conta conta2 = new Conta();
-            conta2.numero = 2;
-            conta2.saldo = 600;
-            conta2.limite = 150;
-            conta2.agencia = agencia2;
+            Console.WriteLine("----------------------------------------");
 
-            Console.WriteLine("\n---Imprimindo os dados da Conta---");
-            Console.WriteLine("---Conta 1---");
-            Console.WriteLine($"Número: {conta1.numero}");
-            Console.WriteLine($"Saldo: {conta1.saldo:c2}");
-            Console.WriteLine($"Limite: {conta1.limite:c2}");
-            Console.WriteLine($"Agência: {conta1.agencia.numero}");
-            conta1.Sacar(50);
-            conta1.Depositar(500);
-            Console.WriteLine("Saldo atual: {0:c2}", conta1.ConsultarSaldo());
-            Console.WriteLine("---Conta 2---");
-            Console.WriteLine($"Número: {conta2.numero}");
-            Console.WriteLine($"Saldo: {conta2.saldo:c2}");
-            Console.WriteLine($"Limite: {conta2.limite:c2}");
-            Console.WriteLine($"Agência: {conta2.agencia.numero}");
+            Console.WriteLine("Dados da agencia");
+            Console.WriteLine("Número: " + ag.numero);
 
-            Cliente c1 = new Cliente();
-            c1.codigo = 128;
-            c1.nome = "André Barbosa";
-            Cliente c2 = new Cliente();
-            c2.codigo = 548;
-            c2.nome = "Jaqueline Ferrete";
+            Console.WriteLine("----------------------------------------");
 
-            c1.cliente = c1;
-            c2.cliente = c2;
+            Console.WriteLine("Dados do endereço");
+            Console.WriteLine("Logradouro: " + end.logradouro);
+            Console.WriteLine("Número: " + end.numero);
+            Console.WriteLine("Bairro: " + end.bairro);
 
-            Console.WriteLine($"\nCliente: {c1.cliente.nome}");
+            Console.WriteLine("----------------------------------------");
 
-            Funcionario funcionario1 = new Funcionario();
-            funcionario1.nome = "Eduardo";
-            funcionario1.salario = 2000;
-            funcionario1.AumentarSalario(10);
-            double salario = funcionario1.ConsultarSalario();
-            Console.WriteLine("\t\t---Imprimindo os dados do funcionário 1---");
-            Console.WriteLine($"Nome: {funcionario1.nome}");
-            Console.WriteLine($"Salário: {funcionario1.salario}");
+            // Ligando os objetos
+            cdc.cliente = c;
+            ct.agencia = ag;
+            end.cliente = c;
 
-            Funcionario funcionario2 = new Funcionario();
-            funcionario2.nome = "Sabrina";
-            funcionario2.salario = 2500;
-            funcionario2.AumentarSalario(10);
-            salario = funcionario2.ConsultarSalario();
-            Console.WriteLine("\t\t---Imprimindo os dados do funcionário 2---");
-            Console.WriteLine($"Nome: {funcionario2.nome}");
-            Console.WriteLine($"Salário: {funcionario2.salario}");
+            Console.WriteLine("Dados do cliente obtidos através do cartão");
+            Console.WriteLine("Nome do cliente: " + cdc.cliente.nome);
+            Console.WriteLine("Código do cliente: " + cdc.cliente.codigo);
+            Console.WriteLine("----------------------------------------");
+            Console.WriteLine("Dados da agencia obtidos através da conta");
+            Console.WriteLine("Número da agencia: " + ct.agencia.numero);
+            Console.WriteLine("----------------------------------------");
+            Console.WriteLine("Dados do cliente obtidos através do endereço");
+            Console.WriteLine("Código do cliente: " + end.cliente.codigo);
+            Console.WriteLine("Nome do cliente: " + end.cliente.nome);
+
+            Console.WriteLine("----------------------------------------\n");
+            // Referência de um objeto
+            Conta contaMaria = new Conta();
+            contaMaria.numero = 23456;
+            contaMaria.saldo = 500;
+            contaMaria.limite = 1000;
+
+
+            // Chamando o método Depositar ()
+            contaMaria.Depositar(250);
+            contaMaria.Sacar(300);
+
+
+            // Armazenando a resposta de um método em uma variável
+            decimal saldoDisponivel = contaMaria.ConsultarSaldo();
+            contaMaria.ImprimeExtrato();
+            Console.WriteLine("Saldo Disponível: " + saldoDisponivel.ToString("c2"));
+
+            Console.WriteLine("----------------------------------------Antes do aumento do salário\n");
+
+            Gerente g1 = new Gerente();
+            g1.nome = "Eduardo";
+            g1.salario = 3000.00;
+            Gerente g2 = new Gerente();
+            g2.nome = "Felipe";
+            g2.salario = 4000.00;
+
+            g1.ImprimirSalario();
+            g1.AumentarSalario();
+            g1.ImprimirSalario();
+
+            g2.ImprimirSalario();
+            g2.AumentarSalario(20);
+            g2.ImprimirSalario();
 
             Console.ReadKey();
         }

@@ -8,7 +8,8 @@ namespace Orientada_a_objetos
 {
     public class CartaoDeCredito
     {
-        public string numero;
-        public string dataValidade;
+        public int numero;
+        public string dataDeValidade;
+        public Cliente cliente;
     }
 }
