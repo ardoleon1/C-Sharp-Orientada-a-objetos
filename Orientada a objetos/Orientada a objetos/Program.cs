@@ -96,16 +96,24 @@ namespace Orientada_a_objetos
             contaMaria.saldo = 500;
             contaMaria.limite = 1000;
 
+            Conta contaJose = new Conta();
+            contaJose.saldo = 0;
+            contaJose.limite = 1000;
 
             // Chamando o método Depositar ()
             contaMaria.Depositar(250);
             contaMaria.Sacar(300);
 
-
             // Armazenando a resposta de um método em uma variável
-            decimal saldoDisponivel = contaMaria.ConsultarSaldo();
+            double saldoDisponivel = contaMaria.ConsultarSaldo();
             contaMaria.ImprimeExtrato();
-            Console.WriteLine("Saldo Disponível: " + saldoDisponivel.ToString("c2"));
+            Console.WriteLine("Saldo Disponível (antes): " + saldoDisponivel.ToString("c2"));
+
+            contaMaria.Transferir(contaJose, 80);
+
+            saldoDisponivel = contaMaria.ConsultarSaldo();
+            contaMaria.ImprimeExtrato();
+            Console.WriteLine("Saldo Disponível (depois): " + saldoDisponivel.ToString("c2"));
 
             Console.WriteLine("----------------------------------------Antes do aumento do salário\n");
 
