@@ -35,5 +35,9 @@ namespace Orientada_a_objetos
             contaDestino.saldo = contaDestino.saldo + valor; //manipula o atributo saldo da conta destino
 
         }
+        public Conta(Agencia agencia)
+        {
+            this.agencia = agencia;
+        }
     }
 }

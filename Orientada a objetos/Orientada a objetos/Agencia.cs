@@ -8,6 +8,11 @@ namespace Orientada_a_objetos
 {
     public class Agencia
     {
-        public int numero;
+        public string numero;
+
+        public Agencia(string numero)
+        {
+            this.numero = numero;
+        }
     }
 }

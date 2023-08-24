@@ -24,20 +24,20 @@ namespace Orientada_a_objetos
 
             // Criando um objeto de cada classe
             Cliente c = new Cliente();
-            CartaoDeCredito cdc = new CartaoDeCredito();
-            Conta ct = new Conta();
-            Agencia ag = new Agencia();
+            CartaoDeCredito cdc = new CartaoDeCredito(111111);
+            Agencia ag = new Agencia("1825");
+            Conta ct = new Conta(ag);
             Endereco end = new Endereco();
 
             // Acessando os atributos
             c.nome = "Rafael Duarte";
             c.codigo = 123;
-            cdc.numero = 111111;
+            //cdc.numero = 111111;
             cdc.dataDeValidade = "12/12/18";
             ct.numero = 45678;
             ct.saldo = 500;
             ct.limite = 100;
-            ag.numero = 1825;
+            //ag.numero = "1825";
             end.logradouro = "Avenida Paraná";
             end.numero = 2345;
             end.bairro = "Centro";
@@ -91,12 +91,12 @@ namespace Orientada_a_objetos
 
             Console.WriteLine("----------------------------------------\n");
             // Referência de um objeto
-            Conta contaMaria = new Conta();
+            Conta contaMaria = new Conta(ag);
             contaMaria.numero = 23456;
             contaMaria.saldo = 500;
             contaMaria.limite = 1000;
 
-            Conta contaJose = new Conta();
+            Conta contaJose = new Conta(ag);
             contaJose.saldo = 0;
             contaJose.limite = 1000;
 
@@ -118,6 +118,7 @@ namespace Orientada_a_objetos
             Console.WriteLine("----------------------------------------Antes do aumento do salário\n");
 
             Gerente g1 = new Gerente();
+
             g1.nome = "Eduardo";
             g1.salario = 3000.00;
             Gerente g2 = new Gerente();
