@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bomba de Combustível", "Bomba de Combustível\Bomba de Combustível.csproj", "{52879C0E-78A8-4BFE-A800-C10DC2928E2F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52879C0E-78A8-4BFE-A800-C10DC2928E2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52879C0E-78A8-4BFE-A800-C10DC2928E2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52879C0E-78A8-4BFE-A800-C10DC2928E2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52879C0E-78A8-4BFE-A800-C10DC2928E2F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A6CDBBC0-4942-4A07-9B87-FF22B4FA72AA}
+	EndGlobalSection
+EndGlobal
