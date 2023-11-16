@@ -8,8 +8,8 @@ namespace Polimorfismo
 {
     public class ContaPoupanca : Conta
     {
-        private string diaAniversario;
+        private int dtAniversario;
 
-        public string DiaAniversario { get { return diaAniversario; } set { diaAniversario = value; } }
+        public int DtAniversario { get { return dtAniversario; } set { dtAniversario = value; } }
     }
 }

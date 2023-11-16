@@ -14,7 +14,7 @@ namespace Polimorfismo
             string horario = String.Format("{0:d/M/yyyy HH:mm:ss}", agora);
 
             System.Console.WriteLine("DATA: " + horario);
-            System.Console.WriteLine("SALDO: " + c.Saldo);
+            System.Console.WriteLine("SALDO: " + c.Saldo + "\n");
         }
     }
 }

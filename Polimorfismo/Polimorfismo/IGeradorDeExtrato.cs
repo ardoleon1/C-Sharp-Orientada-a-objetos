@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace Polimorfismo
 {
-    public abstract class Conta
+    public interface IGeradorDeExtrato
     {
-        private double saldo;
-
-        public double Saldo { get { return saldo;} set { saldo = value; } }
+        void GerarExtrato();
     }
 }

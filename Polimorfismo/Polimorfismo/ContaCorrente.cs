@@ -6,10 +6,15 @@ using System.Threading.Tasks;
 
 namespace Polimorfismo
 {
-    public class ContaCorrente : Conta
+    public class ContaCorrente : Conta, IGeradorDeExtrato
     {
-        private double limite;
+        private double limiteEspecial;
 
-        public double Limte { get { return limite; } set { limite = value; } }
+        public double LimteEspecial { get { return limiteEspecial; } set { limiteEspecial = value; } }
+
+        public void GerarExtrato()
+        {
+            Console.WriteLine("Gerando extrato...");
+        }
     }
 }
