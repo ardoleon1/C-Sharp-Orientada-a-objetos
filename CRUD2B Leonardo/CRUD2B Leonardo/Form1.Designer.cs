@@ -206,7 +206,7 @@
             this.txtEndereco.Location = new System.Drawing.Point(12, 208);
             this.txtEndereco.Name = "txtEndereco";
             this.txtEndereco.Size = new System.Drawing.Size(308, 23);
-            this.txtEndereco.TabIndex = 5;
+            this.txtEndereco.TabIndex = 6;
             // 
             // txtBairro
             // 
@@ -214,7 +214,7 @@
             this.txtBairro.Location = new System.Drawing.Point(335, 208);
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(136, 23);
-            this.txtBairro.TabIndex = 6;
+            this.txtBairro.TabIndex = 7;
             this.txtBairro.TextChanged += new System.EventHandler(this.txtBairro_TextChanged);
             // 
             // txtCidade
@@ -223,7 +223,7 @@
             this.txtCidade.Location = new System.Drawing.Point(143, 266);
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Size = new System.Drawing.Size(141, 23);
-            this.txtCidade.TabIndex = 8;
+            this.txtCidade.TabIndex = 9;
             // 
             // mtbCPF
             // 
@@ -241,7 +241,7 @@
             this.mtbCEP.Mask = "00,000-999";
             this.mtbCEP.Name = "mtbCEP";
             this.mtbCEP.Size = new System.Drawing.Size(100, 23);
-            this.mtbCEP.TabIndex = 7;
+            this.mtbCEP.TabIndex = 8;
             // 
             // mtbCelular
             // 
@@ -250,7 +250,7 @@
             this.mtbCelular.Mask = "(99) 00000-0000";
             this.mtbCelular.Name = "mtbCelular";
             this.mtbCelular.Size = new System.Drawing.Size(100, 23);
-            this.mtbCelular.TabIndex = 10;
+            this.mtbCelular.TabIndex = 11;
             // 
             // cbSexo
             // 
@@ -300,7 +300,7 @@
             this.comboBox1.Location = new System.Drawing.Point(302, 266);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(47, 24);
-            this.comboBox1.TabIndex = 9;
+            this.comboBox1.TabIndex = 10;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.cbSexo_SelectedIndexChanged);
             // 
             // dtNascimento
@@ -315,10 +315,10 @@
             // dataGridView
             // 
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView.Location = new System.Drawing.Point(12, 314);
+            this.dataGridView.Location = new System.Drawing.Point(12, 326);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.Size = new System.Drawing.Size(592, 150);
-            this.dataGridView.TabIndex = 16;
+            this.dataGridView.TabIndex = 17;
             // 
             // btmAlterar
             // 
@@ -328,7 +328,7 @@
             this.btmAlterar.Location = new System.Drawing.Point(498, 125);
             this.btmAlterar.Name = "btmAlterar";
             this.btmAlterar.Size = new System.Drawing.Size(90, 35);
-            this.btmAlterar.TabIndex = 12;
+            this.btmAlterar.TabIndex = 13;
             this.btmAlterar.UseVisualStyleBackColor = true;
             // 
             // btmExcluir
@@ -338,7 +338,7 @@
             this.btmExcluir.Location = new System.Drawing.Point(498, 170);
             this.btmExcluir.Name = "btmExcluir";
             this.btmExcluir.Size = new System.Drawing.Size(90, 35);
-            this.btmExcluir.TabIndex = 13;
+            this.btmExcluir.TabIndex = 14;
             this.btmExcluir.UseVisualStyleBackColor = true;
             // 
             // btmSalvar
@@ -348,7 +348,7 @@
             this.btmSalvar.Location = new System.Drawing.Point(498, 84);
             this.btmSalvar.Name = "btmSalvar";
             this.btmSalvar.Size = new System.Drawing.Size(90, 35);
-            this.btmSalvar.TabIndex = 11;
+            this.btmSalvar.TabIndex = 12;
             this.btmSalvar.UseVisualStyleBackColor = true;
             // 
             // btmPesquisar
@@ -358,7 +358,7 @@
             this.btmPesquisar.Location = new System.Drawing.Point(498, 211);
             this.btmPesquisar.Name = "btmPesquisar";
             this.btmPesquisar.Size = new System.Drawing.Size(90, 35);
-            this.btmPesquisar.TabIndex = 14;
+            this.btmPesquisar.TabIndex = 15;
             this.btmPesquisar.UseVisualStyleBackColor = true;
             // 
             // btmCancelar
@@ -368,7 +368,7 @@
             this.btmCancelar.Location = new System.Drawing.Point(498, 255);
             this.btmCancelar.Name = "btmCancelar";
             this.btmCancelar.Size = new System.Drawing.Size(90, 35);
-            this.btmCancelar.TabIndex = 15;
+            this.btmCancelar.TabIndex = 16;
             this.btmCancelar.UseVisualStyleBackColor = true;
             // 
             // label12
@@ -406,7 +406,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.BackgroundImage = global::CRUD2B_Leonardo.Properties.Resources.douglas_legramante;
-            this.ClientSize = new System.Drawing.Size(626, 478);
+            this.ClientSize = new System.Drawing.Size(620, 487);
             this.Controls.Add(this.btmCancelar);
             this.Controls.Add(this.btmPesquisar);
             this.Controls.Add(this.btmExcluir);
